@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html>
+    <style>
+        h1 {
+            color: black;
+            text-align: center;
+
+        }
+        p {
+            color: black;
+            text-align: center;
+            font-size: larger;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        .headerlink {
+            color:green;
+            font-size: Larger;
+            padding-right: 30px;
+        }
+        .plink {
+            color: green;
+            font-size: larger;
+        }
+        .center {
+            text-align: center;
+        }
+        .main {
+            text-align: center;
+        }
+        .bottom {
+            text-align: center;
+            /*position: fixed;*/
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/ 
+            height: 100px;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This website conatins information 
+        about me and projects that I have done.">
+        <title>David Clark's Website</title>
+    </head>
+    <body style="background-color:rgb(222, 247, 229)" >
+        <header class = "center">
+            <h1>David Clark</h1>
+            <h4>dhchasanemail@gmail.com</h4>
+            <h4>510-921-4127</h4>
+            <hr/>
+            <a class="headerlink" href="index.html" > Home</a>
+            <a class="headerlink" href="about.html" > About</a>
+            <a class="headerlink" href="resume.html"> Resume</a>
+            <a class="headerlink" href="projects.html"> Projects</a>
+            <a class="headerlink" href="links.html"> Contact Me</a>
+            <hr/>
+        </header>
+        <main class="main">
+            <p>
+                These are the Projects that I did while iwas at school at BYU in Provo. I
+                don't feel comfortable sharing my source code for these projects because 
+                these projects are still being used. I will post links to class websites when 
+                they are available.
+            </p>
+            <article>
+                <h1>ECEN 330 Intro to Embedded System Programming</h1>
+                <p>
+                    Ecen 330 is intro to embedded programming and within this calss we made several different applications to run on
+                    a Digilent Zybo board programmed with Xilinx. Some of these projects include a touchscreen programmable clock, a 
+                    touch screen simon says, a min maxed tic tac toe game, and a touch screen whack a mole game. The youtube <a class= "plink" href= "https://www.youtube.com/channel/UC2DAqectVGE6DIT-b8N2dJg/videos" target="_blank"> link</a> 
+                    demonstrates these projects.All of the Code in this class was written in C.
+                </p>
+            </article>
+            <article>
+                <h1>ECEN 390 Junior Team Design Project</h1>
+                <p>
+                    ECEN 390 is the big junior year project where you develop a laser tag system with a team of other students.
+                    my experience with this course was atypical because we were unable to finish the hardware portion of the project
+                    due to the outbreak of the pandemic. My partner and I did finish the software portion of the project. The wiki for the class is located
+                    <a class="plink" href="http://ece390web.groups.et.byu.net/dokuwiki/doku.php?id=start" target="_blank"> here</a>. The software portion is milestones 1-3.
+                    All of the Code in this class was written in C.
+                </p>
+            </article>
+            <article>
+                <h1>CS 240</h1>
+                <p>
+                    The CS 240 class is the biog software project java class. At the beginning of the semester you create a spelling corrector that looks in an
+                    inputted dictionary for a suggested correct spelling of the word the user types in and an evilhangman game which changes the word to guess to 
+                    make sure the user doe not get it right. The main Project for the class is a family map server and client. The server stores tables of the users login info,
+                    relative info, relative events, and relative locations and the client is an android app that grabs the information and shows where relatives live(d) and gives 
+                    the user information about their relatives. All the code in this class was written in Java.
+                </p>
+            </article>
+            <article>
+                <h1>CS 340</h1>
+                <p>
+                    The CS 340 class is similar to the CS 240 class except your big project is a twitter clone. We were taught how to use AWS to act as our server for our client. We wrote
+                    and deployed lambda functions. The specific services we used were S3, DynamoDB, API Gateway, and Simple Queue Service. THe client was an android app written in Java.
+                </p>
+            </article>
+            <article>
+                <h1>ECEN 323 Computer Organization</h1>
+                <p>
+                    In ECEN 323 you design and build a simple Risc-V processor using Vivado hardware description language
+                </p>     
+            </article>
+            <article>
+                <h1>ECEN 424 Computer Systems</h1>
+                <p>
+                    Within this course you learn about how computers manage memory and ways to optimize code for speed
+                </p>     
+            </article>
+            <article>
+                <h1>ECEN 427 Embedded Systems</h1>
+                <p>
+                    This was probably my favorite class I took at BYU. You code space invaders form scratch on a xilinx Pynq board (which runs linux).
+                    We wrote audio drivers, button drivers, among other things. This class sparked my interest in Linux and since then I always try to keep learning
+                    more and more about it.
+
+                </p>     
+            </article>
+            <article>
+                <h1>ECEN 493R(now 426) Computer Networks</h1>
+                <p>
+                    Introduction into http protocol and other network based computing. One lab that stuck oput to me was the final lab where you create a chat client
+                    with other students using mqtt protcol.
+                </p>     
+            </article>
+            <article>
+                <h1>Capstone</h1>
+                <p>
+                    My capstone project was to port the Zephyr RTOS (specifically for the Cortex M3 boards) UART, Ethernet, and filesystem to the HALucinator project. 
+                    This involved writing Python intercept functions for C code and using Ghidra to know which functions to intercept. I was part of the filesystem team.
+                </p>     
+            </article>
+        </main>
+        <footer class ="bottom">
+            <hr/>
+            <p>I taught myself some basic HTML and CSS to create this website 
+                and host it using AWS. All of my HTML pages are found on my 
+                <a class="plink" href="https://github.com/davy326/PersonalWebsite"> Github.</a>
+                 I used these AWS guides to host my website. 
+                <a class="plink" href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html" target = "_blank"> Route 53 Alias</a>
+                <a class="plink" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-custom-domain-walkthrough.html" target = "_blank"> S3 Website </a>
+            </p>
+        </footer>
+    </body>
+</html>
