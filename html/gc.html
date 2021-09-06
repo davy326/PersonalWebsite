@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html>
+    <style>
+        h1 {
+            color: black;
+            text-align: center;
+
+        }
+        p {
+            color: black;
+            text-align: center;
+            font-size: larger;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        .headerlink {
+            color: chocolate;
+            font-size: Larger;
+            padding-right: 30px;
+        }
+        .plink {
+            color: chocolate;
+            font-size: larger;
+        }
+        .center {
+            text-align: center;
+        }
+        .main {
+            text-align: center;
+        }
+        .bottom {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/ 
+            height: 100px;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This website conatins information 
+        about me and projects that I have done.">
+        <title>David Clark's Website</title>
+    </head>
+    <body style="background-color:gainsboro;" >
+        <header class = "center">
+            <h1>David Clark</h1>
+            <hr/>
+            <a class="headerlink" href="index.html" > Home</a>
+            <a class="headerlink" href="about.html" > About</a>
+            <a class="headerlink" href="resume.html"> Resume</a>
+            <a class="headerlink" href="projects.html"> Projects</a>
+            <a class="headerlink" href="links.html"> Links</a>
+            <hr/>
+        </header>
+        <main class="main">
+            <article>
+                <h1>V1</h1>
+                <p>
+                    I really like Super Smash Bros. Melee and have played it competitively since 2014. There
+                    is so much depth found in the games movement, and is very rewarding to play. One issue that
+                    exists however is that there is adescrepancy in controllers with some leading to be better 
+                    than others. The details of these descrepancies are found in this article 
+                    <a class ="plink" href="https://www.arikyueh.com/ArduinoGC.html" target = "_blank"> here.</a>
+                    I used this  <a class ="plink" href="https://imgur.com/gallery/LFWDg" target = "_blank"> guide</a>
+                    to install it into my controller.
+                </p>
+                <p>
+                    <a href="gcshell.jpeg">
+                        <img width = "300" height = "400" src ="gcshell.jpeg" alt ="Gc With shell" style="text-align: center;" target = "_blank"> </img>
+                    </a>
+                    <a href="gcnoshell.jpeg">
+                        <img width = "300" height = "400" src ="gcnoshell.jpeg" alt ="Gc no Shell" style="text-align: center;" target = "_blank"> </img>
+                    </a>
+                </p>
+            </article>
+            <article>
+                <h1>V2</h1>
+                <p>
+                    My plan for V2 is rectify some of the issues that I did not like about directly installing it into my controller.
+                    Sometimes i have lots of people comeover to play games and use my controller and while there is code
+                    in place to turn off the hardware mod not everyone that uses my controller knows that. Basically I do not like how
+                    invasive the mod is to the controlelr. Basically for v2 I want to make a junciton box so that I don't need to install
+                    the arduino directly into my controller so it's easier to fix issues and reprogram if need be.
+                </p>
+            </article>
+            <p>
+                Source code can be found <a href="https://github.com/davy326/GCArduino" target="_blank"> here</a>
+            </p> 
+        </main>
+        <footer class ="bottom">
+            <hr/>
+            <p>I learned some basic HTML and CSS to create this website 
+                and host it using AWS. All of my HTML pages are found on my 
+                <a class="plink" href="https://github.com/davy326/PersonalWebsite"> Github </a>
+                I used these AWS guides to host my website. 
+                <a class="plink" href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html" target = "_blank"> Route 53 Alias</a>
+                <a class="plink" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-custom-domain-walkthrough.html" target = "_blank"> S3 Website </a>
+            </p>
+        </footer>
+    </body>
+</html>

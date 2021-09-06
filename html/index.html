@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html>
+    <style>
+        h1 {
+            color: black;
+            text-align: center;
+
+        }
+        p {
+            color: black;
+            text-align: center;
+            font-size: larger;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        .headerlink {
+            color: chocolate;
+            font-size: Larger;
+            padding-right: 30px;
+        }
+        .plink {
+            color: chocolate;
+            font-size: larger;
+        }
+        .center {
+            text-align: center;
+        }
+        .main {
+            text-align: center;
+        }
+        .bottom {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/ 
+            height: 100px;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This website conatins information 
+        about me and projects that I have done.">
+        <title>David Clark's Website</title>
+    </head>
+    <body style="background-color:gainsboro;" >
+        <header class = "center">
+            <h1>David Clark</h1>
+            <hr/>
+            <a class="headerlink" href="index.html" > Home</a>
+            <a class="headerlink" href="about.html" > About</a>
+            <a class="headerlink" href="resume.html"> Resume</a>
+            <a class="headerlink" href="projects.html"> Projects</a>
+            <a class="headerlink" href="links.html"> Links</a>
+            <hr/>
+        </header>
+        <main class="main">
+            <a href="Debonair.jpg">
+                <img width = "300" height = "300" src ="Debonair.jpg" alt="ME!" style="text-align: center;"> </img>
+            </a>
+            <p>I'm a recent Graduate From Brigham Young University in Computer Engineering 
+                who loves to solve problems and learn new things.</p>
+        </main>
+        <footer class ="bottom">
+            <hr/>
+            <p>I learned some basic HTML and CSS to create this website 
+                and host it using AWS. All of my HTML pages are found on my 
+                <a class="plink" href="https://github.com/davy326/PersonalWebsite"> Github </a>
+                I used these AWS guides to host my website. 
+                <a class="plink" href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html" target = "_blank"> Route 53 Alias</a>
+                <a class="plink" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-custom-domain-walkthrough.html" target = "_blank"> S3 Website </a>
+            </p>
+        </footer>
+    </body>
+</html>

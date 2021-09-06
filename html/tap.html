@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html>
+    <style>
+        h1 {
+            color: black;
+            text-align: center;
+
+        }
+        p {
+            color: black;
+            text-align: center;
+            font-size: larger;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        .headerlink {
+            color: chocolate;
+            font-size: Larger;
+            padding-right: 30px;
+        }
+        .plink {
+            color: chocolate;
+            font-size: larger;
+        }
+        .center {
+            text-align: center;
+        }
+        .main {
+            text-align: center;
+        }
+        .bottom {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/ 
+            height: 100px;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This website conatins information 
+        about me and projects that I have done.">
+        <title>David Clark's Website</title>
+    </head>
+    <body style="background-color:gainsboro;" >
+        <header class = "center">
+            <h1>David Clark</h1>
+            <hr/>
+            <a class="headerlink" href="index.html" > Home</a>
+            <a class="headerlink" href="about.html" > About</a>
+            <a class="headerlink" href="resume.html"> Resume</a>
+            <a class="headerlink" href="projects.html"> Projects</a>
+            <a class="headerlink" href="links.html"> Links</a>
+            <hr/>
+        </header>
+        <main class="main">
+            <p>
+                For my brother in law's gradschool project he needed to choreograph a dance with 
+                some kind of innovation that he game up with. His initial idea was to create tap 
+                shoes that make different sounds when tapped so that you could create more sounds 
+                than just the tapping. I agreed to help him come up with a design. We used some 
+                ESP32 boards due to thier bluetooth functionality, cost, and ease of use with
+                being able to program them with arduino, and used some fsrs as the buttons. 
+                The ESP32 boards emulated keyboards and we used soundplant as a keyboard sound board.
+                Each system had 2 fsrs and that each sent two signals for two keys (so four keys per
+                system) for a hard press and a soft press. We made four of these systems. While the initial
+                design was to put the fsrs in the shoes we ended up just having the dancers hold them and tap 
+                the fsrs to input the different letters to the sound board on the computer that hosted
+                all of the devices.
+            </p>
+            <p>
+                <a href="breakout.png">
+                    <img width = "300" height = "300" src ="breakout.png" alt ="breakout" style="text-align: center;"> </img>
+                </a>
+                <a href="programming.png">
+                    <img width = "300" height = "300" src ="programming.png" alt ="programming" style="text-align: center;"> </img>
+                </a>
+                <a href="prototype.png">
+                    <img width = "300" height = "300" src ="prototype.png" alt ="prototype" style="text-align: center;"> </img>
+                </a>
+            </p>
+            <p>
+                Source code can be found <a href="https://github.com/davy326/TapDance" target="_blank"> here</a>
+            </p> 
+        </main>
+        <footer class ="bottom">
+            <hr/>
+            <p>I learned some basic HTML and CSS to create this website 
+                and host it using AWS. All of my HTML pages are found on my 
+                <a class="plink" href="https://github.com/davy326/PersonalWebsite"> Github </a>
+                I used these AWS guides to host my website. 
+                <a class="plink" href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html" target = "_blank"> Route 53 Alias</a>
+                <a class="plink" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-custom-domain-walkthrough.html" target = "_blank"> S3 Website </a>
+            </p>
+        </footer>
+    </body>
+</html>
