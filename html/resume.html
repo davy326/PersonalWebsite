@@ -34,7 +34,19 @@
             bottom: 0;
             width: 100%;
             /* Height of the footer*/ 
-            height: 100px;
+            height: 150px;
+            z-index: 999;
+            background-color: rgb(222, 247, 229); 
+            /* -moz-box-sadow: 0 0 10px white; 
+            box-shadow: 0 0 10px white; */
+        }
+        .page-container {
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .content-wrap {
+            padding-bottom: 150px;    /* Footer height */
         }
     </style>
     <head>
@@ -44,6 +56,8 @@
         <title>David Clark's Website</title>
     </head>
     <body style="background-color:rgb(222, 247, 229)" >
+        <div class ="page-container">
+            <div class="content-wrap">
         <header class = "center">
             <h1>David Clark</h1>
             <h4>dhchasanemail@gmail.com</h4>
@@ -62,6 +76,7 @@
             </a>
 
         </main>
+            </div>
         <footer class ="bottom">
             <hr/>
             <p>I taught myself some basic HTML and CSS to create this website 
@@ -72,5 +87,6 @@
                 <a class="plink" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-custom-domain-walkthrough.html" target = "_blank"> S3 Website </a>
             </p>
         </footer>
+        </div>
     </body>
 </html>
